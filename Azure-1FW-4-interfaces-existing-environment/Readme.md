@@ -2,6 +2,8 @@
 
 [<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcompunet-biz%2Fpa-azure-reference-architectures%2Fmaster%2FAzure-1FW-4-interfaces-existing-environment%2FAzureDeploy.json)
 
+[![Deploy to Azure2](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
 This template was created to support the deployment of a 4 interface Palo Alto Networks firewall into an existing Microsoft Azure environment that has the following items already deployed:
 
                     -Load Balancer - If being used (does not need to exist yet)
