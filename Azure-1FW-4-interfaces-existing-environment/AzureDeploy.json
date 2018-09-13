@@ -79,7 +79,7 @@
        "metadata": {
           "description": "Firewall License Model"
        },
-       "defaultValue": "bundle2"
+       "defaultValue": "byol"
     },
     "virtualNetworkName": {
       "type": "string",
