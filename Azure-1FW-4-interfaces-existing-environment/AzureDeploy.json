@@ -90,7 +90,7 @@
     },
     "virtualNetworkAddressPrefix": {
       "type": "string",
-      "defaultValue": "192.168.0.0/16",
+      "defaultValue": "192.168.1.0/24",
       "metadata": {
         "description": "EXISTING Virtual network address CIDR"
       }
@@ -104,90 +104,91 @@
     },
     "subnet0Name": {
       "type": "string",
-      "defaultValue": "Mgmt",
+      "defaultValue": "Management",
       "metadata": {
         "description": "EXISTING Subnet for Management"
       }
     },
     "subnet1Name": {
       "type": "string",
-      "defaultValue": "Untrust",
+      "defaultValue": "Shared-Public",
       "metadata": {
         "description": "EXISTING Subnet for Untrust"
       }
     },
     "subnet2Name": {
       "type": "string",
-      "defaultValue": "Trust",
+      "defaultValue": "Shared-Private",
       "metadata": {
         "description": "EXISTING Subnet for Trust"
       }
     },
     "subnet3Name": {
       "type": "string",
-      "defaultValue": "DMZ",
+      "defaultValue": "Shared-VPN",
       "metadata": {
         "description": "EXISTING Subnet for DMZ"
       }
     },
     "subnet0Prefix": {
       "type": "string",
-      "defaultValue": "192.168.0.0/24",
+      "defaultValue": "192.168.1.0/24",
       "metadata": {
         "description": "EXISTING Mgmt subnet CIDR"
       }
     },
     "subnet1Prefix": {
       "type": "string",
-      "defaultValue": "192.168.1.0/24",
+      "defaultValue": "172.16.1.0/24",
       "metadata": {
         "description": "EXISTING Untrust subnet CIDR"
       }
     },
     "subnet2Prefix": {
       "type": "string",
-      "defaultValue": "192.168.2.0/24",
+      "defaultValue": "10.5.0.0/24",
       "metadata": {
         "description": "EXISTING Trust subnet CIDR"
       }
     },
     "subnet3Prefix": {
       "type": "string",
-      "defaultValue": "192.168.3.0/24",
+      "defaultValue": "10.5.15.0/24",
       "metadata": {
         "description": "EXISTING DMZ subnet CIDR"
       }
     },
     "subnet0StartAddress": {
       "type": "string",
-      "defaultValue": "192.168.0.4",
+      "defaultValue": "192.168.1.6",
       "metadata": {
         "description": "Mgmt subnet static address"
       }
     },
     "subnet1StartAddress": {
       "type": "string",
-      "defaultValue": "192.168.1.4",
+      "defaultValue": "172.16.1.6",
       "metadata": {
         "description": "Untrust subnet static address"
       }
     },
     "subnet2StartAddress": {
       "type": "string",
-      "defaultValue": "192.168.2.4",
+      "defaultValue": "10.5.0.6",
       "metadata": {
         "description": "Trust subnet static address"
       }
     },
     "subnet3StartAddress": {
       "type": "string",
-      "defaultValue": "192.168.3.4",
+      "defaultValue": "10.5.15.6",
       "metadata": {
         "description": "DMZ subnet static address"
       }
     },
     "adminUsername": {
       "type": "string",
+      "defaultValue": "sysadmin",
       "metadata": {
         "description": "Username of the administrator account of VM-Series"
       }
