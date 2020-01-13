@@ -1,6 +1,6 @@
 # Deploy a VM-Series firewall into an existing Azure Resource Group
 
-[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fpaloaltonetworks%2Freferencearchitectures%2Fmaster%2FAzure-1FW-3-interfaces-existing-environment-BS%2FAzureDeploy.json)
+[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcompunet-biz%2Fpa-azure-reference-architectures%2Fmaster%2FAzure-1FW-3-interfaces-existing-environment-AZ%2FAzureDeploy.json)
 
 This template deploys a (3) interface Palo Alto Networks VM-Series firewall as shown below:
 
@@ -9,18 +9,14 @@ This template deploys a (3) interface Palo Alto Networks VM-Series firewall as s
 </p>
 
 
-This template supports VM-Series automated bootstrapping when used with Panorama and you have already created the bootstrap package and deployed to a filesystem in an Azure Storage Account.
 
 This template was created to support the deployment of a 3 interface Palo Alto Networks firewall into an existing Microsoft Azure environment that has the following items already deployed:
 
                     - VNET (assumes "AzureRefArch-VNET" is already created with following subnets):
-                      - Management (192.168.1.0/24)
-                      - Public (172.16.1.0/24)
-                      - Private (10.5.0.0/24)
-                    - Resource Group (for the firewall) with the following resources:
-                      - Availability Set for the firewall
-                      - Storage Account for the firewall VHD
-                      - Public IP address (Standard SKU) for the firewall management interface
+                      - Management (10.0.0.0/24)
+                      - Untrust (10.0.1.0/24)
+                      - Trust (10.0.2.0/24)
+
                     
             
 FEATURES:
@@ -32,14 +28,7 @@ FEATURES:
 - You may choose the deployment SKU for the firewall: (byol, bundle1 or bundle2).
 - Static IP address assignment is used for all the firewall interfaces.
 
-
-The following Storage Account types are supported:
-
-                    -Standard_LRS (used in deployment guide)
-                    -Standard_GRS
-                    -Standard_RAGRS
-                    -Premium_LRS
-                    
+                   
 The following VMs are supported:
 
                     -Standard_D3
